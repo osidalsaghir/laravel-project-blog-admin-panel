@@ -26,6 +26,15 @@
                     <form action ="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="form-group">
+                        <label for="category_id">Category</label>
+                        <select type="text" class="form-control"name="category_id">
+                            @foreach($categories as $category)
+                          <option value="{{$category->id}}">{{$category->name}}</option>
+                         
+                          @endforeach
+                        </select>
+                      </div>
+                    <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" name="title">
                     </div>

@@ -34,7 +34,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/post/create">Create Post</a>
+          <a class="dropdown-item" href="/posts">Posts</a>
           <a class="dropdown-item" href="/category/create">Create Category</a>
+          <a class="dropdown-item" href="/categories">Categories</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
