@@ -37,9 +37,8 @@
           <a class="dropdown-item" href="/posts">Posts</a>
           <a class="dropdown-item" href="/category/create">Create Category</a>
           <a class="dropdown-item" href="/categories">Categories</a>
-          <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="/post/trashed">Show delete posts</a>
         </div>
       </li>
     

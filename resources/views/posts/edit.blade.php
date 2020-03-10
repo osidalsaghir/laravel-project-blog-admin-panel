@@ -26,7 +26,7 @@
                         </div>
                         <div class="form-group">
                             <label for="content" >Content</label>
-                            <textarea class="form-control" value="{{$post->content}}" name="content" rows="8" col="8"></textarea>
+                            <textarea class="form-control"  name="content" rows="8" col="8">{{$post->content}}</textarea>
                          </div>
                          <div class="form-group">
                             <label for="featured">Photo</label>
