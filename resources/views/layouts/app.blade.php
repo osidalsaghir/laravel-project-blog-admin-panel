@@ -33,10 +33,14 @@
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/post/create">Create Post</a>
-          <a class="dropdown-item" href="/posts">Posts</a>
-          <a class="dropdown-item" href="/category/create">Create Category</a>
+
+          <a class="dropdown-item" href="/tags">Tags</a>
           <a class="dropdown-item" href="/categories">Categories</a>
+          <a class="dropdown-item" href="/posts">Posts</a>
+          <a class="dropdown-item" href="/tags/create">Create Tags</a>
+          <a class="dropdown-item" href="/category/create">Create Category</a>
+          <a class="dropdown-item" href="/post/create">Create Post</a>
+          
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/post/trashed">Show delete posts</a>
         </div>

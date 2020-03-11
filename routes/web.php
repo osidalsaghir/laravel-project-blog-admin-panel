@@ -47,6 +47,13 @@ Route::group(["middleware" => ["auth"]] , function(){
     Route::get('/post/hardDelete/{id}', 'PostController@hardDelete')->name('post.hardDelete');
     Route::get('/post/delete/{id}', 'PostController@destroy')->name('post.delete');
 
+            /*tags routes */
+    Route::get('/tags', 'TagController@index')->name('tags');
+    Route::get('/tags/create', 'TagController@create')->name('tags.create');
+    Route::post('/tags/store', 'TagController@store')->name('tags.store');
+    Route::get('/tags/edit/{id}', 'TagController@edit')->name('tags.edit');
+    Route::post('/tags/update/{id}', 'TagController@update')->name('tags.update');
+    Route::get('/tags/delete/{id}', 'TagController@destroy')->name('tags.delete');
  /*YOU CAN PASS THE ROUT FUNCTIONS HERE ALSO TO MAKE THE PAGE PREVENTED BY THE USER WHO HAS 
  ACCOUNTS ... */
 });

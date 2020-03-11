@@ -27,18 +27,12 @@
                         <td>{{$post->content}}</td>
                         <td> 
                             <a href=""><img width="50px" height="50px" src="{{$post->feature}}" alt="{{$post->title}}"></a>
-                            
-                         
                         </td>
-                        <td> 
-                            
-                            
+                        <td>     
                             <a  href="{{route('post.restore' , ['id' => $post -> id])}}"> restore</a></td>
                         </td>
                         <td> 
                             <a  href="{{route('post.hardDelete' , ['id' => $post -> id])}}"> delete</a></td>
-
-                            
                         </td>
                         <tr>
                     @endforeach
