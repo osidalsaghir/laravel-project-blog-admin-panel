@@ -54,6 +54,16 @@ Route::group(["middleware" => ["auth"]] , function(){
     Route::get('/tags/edit/{id}', 'TagController@edit')->name('tags.edit');
     Route::post('/tags/update/{id}', 'TagController@update')->name('tags.update');
     Route::get('/tags/delete/{id}', 'TagController@destroy')->name('tags.delete');
+
+    /*tags user */
+    Route::get('/users', 'UserController@index')->name('users');
+    Route::get('/users/create', 'UserController@create')->name('users.create');
+    Route::post('/users/store', 'UserController@store')->name('users.store');
+    Route::get('/users/edit/{id}', 'UserController@edit')->name('users.edit');
+    Route::post('/users/update/{id}', 'UserController@update')->name('users.update');
+    Route::get('/users/delete/{id}', 'UserController@destroy')->name('users.delete');
+    Route::get('/users/admin/{id}', 'UserController@admin')->name('users.admin');
+    Route::get('/users/notadmin/{id}', 'UserController@notAdmin')->name('users.not.admin');
  /*YOU CAN PASS THE ROUT FUNCTIONS HERE ALSO TO MAKE THE PAGE PREVENTED BY THE USER WHO HAS 
  ACCOUNTS ... */
 });

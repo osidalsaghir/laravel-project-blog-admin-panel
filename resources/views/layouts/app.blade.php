@@ -30,7 +30,7 @@
                 <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Admin Panel
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
@@ -40,6 +40,8 @@
           <a class="dropdown-item" href="/tags/create">Create Tags</a>
           <a class="dropdown-item" href="/category/create">Create Category</a>
           <a class="dropdown-item" href="/post/create">Create Post</a>
+          <a class="dropdown-item" href="{{route('users')}}">Users</a>
+          <a class="dropdown-item" href="{{route('users.create')}}">Create Users</a>
           
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/post/trashed">Show delete posts</a>
