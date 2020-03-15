@@ -64,6 +64,12 @@ Route::group(["middleware" => ["auth"]] , function(){
     Route::get('/users/delete/{id}', 'UserController@destroy')->name('users.delete');
     Route::get('/users/admin/{id}', 'UserController@admin')->name('users.admin');
     Route::get('/users/notadmin/{id}', 'UserController@notAdmin')->name('users.not.admin');
+
+    /*tags setting */
+    Route::get('/setting', 'SettingController@index')->name('setting');
+    Route::post('/setting/update', 'SettingController@update')->name('setting.update');
+
+    Route::get('/', 'HomeUiController@index')->name('home');
  /*YOU CAN PASS THE ROUT FUNCTIONS HERE ALSO TO MAKE THE PAGE PREVENTED BY THE USER WHO HAS 
  ACCOUNTS ... */
 });

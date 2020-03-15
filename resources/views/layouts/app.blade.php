@@ -42,6 +42,7 @@
           <a class="dropdown-item" href="/post/create">Create Post</a>
           <a class="dropdown-item" href="{{route('users')}}">Users</a>
           <a class="dropdown-item" href="{{route('users.create')}}">Create Users</a>
+          <a class="dropdown-item" href="{{route('setting')}}">Settings</a>
           
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/post/trashed">Show delete posts</a>
